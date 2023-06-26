@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Kshitij Jain"]  Kshitij Jain</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/animationcustom.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="~/Data/Kshitij-profile.jpg" style="border-radius:50%; background-color:transparent;">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+ 
+    <div class="floating-container">
+ 
+        <div class="floating-button"><i class="fa-solid fa-plus"></i></div>
+        <div class="element-container">
+
+           
+                <span class="float-element tooltip-left">
+                <a href="">
+                    <i class="material-icons">
+                        home
+                    </i>
+                </a>
+                </span>             
+
+            
+            <span  class="float-element">
+                <a href="#skills">
+                    <i class="material-icons">equalizer </i>
+                 </a>
+            </span>
+            <span class="float-element">
+                <a href="#resume">
+                <i class="material-icons">school</i>
+                </a>
+            </span>
+            <span class="float-element">
+                <a href="#certificate">
+                <i class="material-icons"> workspace_premium</i>
+                </a>
+            </span>
+            <span class="float-element">
+                <a href="#contactUs">
+                <i class="material-icons">email</i>
+                </a>
+            </span>
+
+        </div>
+    </div>
+    <div class="container-fluid  " >
+
+       
+
+
+
+        <main role="main"  class="pb-3">         
+            @RenderBody()
+        </main>
+          
+ 
+ </div>
+
+
+     
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/b5e70f813f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
