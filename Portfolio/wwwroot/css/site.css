@@ -4,9 +4,10 @@
 
 
 body {
-    background: linear-gradient(252deg, rgb(8, 0, 23, 0.98) 0%, rgb(0, 21, 48, 0.99) 50%, #00275b 100%);
+    background: rgb(19,49,71);
+    background: linear-gradient(90deg, rgba(19,49,71,1) 0%, rgba(6,78,116,1) 0%, rgba(30,59,96,1) 0%, rgba(3,9,14,1) 0%, rgba(18,67,104,1) 49%, rgba(4,17,29,1) 49%, rgba(11,32,48,1) 50%, rgba(12,37,54,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
     background-size: 400% 400%;
-    animation: gradient 6s ease-in infinite;
+    animation: gradient 16s ease-in infinite;
 }
 
 .container-fluid {
@@ -18,7 +19,7 @@ body {
     overflow: hidden;
     position: relative;
     padding: 2% 5%;
-    color: rgb(225, 237, 255, 0.70);
+    color: rgb(225, 237, 255, 0.85);
     font-family: 'Comic Sans MS';
     font-weight: 100;
 }
