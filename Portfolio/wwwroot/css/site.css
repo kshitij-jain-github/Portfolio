@@ -2,70 +2,6 @@
 
 
 
- 
- /* Badge */
-.badge {
-    margin: 1.5em 3em;
-    width: 8em;
-    height: 8em;
-    border-radius: 20%;
-    display: inline-block;
-    top: 0;
-  }
-
-.rounded {
-    width: 65px;
-    height: 65px;
-    background: white;
-    position: absolute;
-    margin: 10px 10px  ;
-    
-    box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
-  }
-i.fab {
-    font-size: 2.6em;
-    margin-top: 16px;
-}
-/* Colors */
-.deepblue {
-    background: dodgerblue;
-    color: deepskyblue;
-}
- 
-.gold {
-    background: gold;
-    color: gold;
-}
-
-.darkred {
-    background: red;
-    color: red;
-}
- 
-.darkgreen {
-    background: yellowgreen;
-    color: darkslategray;
-}
-
-.crimson {
-    background: crimson;
-    color: firebrick;
-}
-
-.steel {
-    background: steelblue;
-    color: gold;
-}
- 
-.rebecca {
-    background: rebeccapurple;
-    color: rebeccapurple;
-}
-
-.gainsboro {
-    background: gainsboro;
-    color: orangered;
-}
 body {
     
     background: linear-gradient(94deg, rgba(19,49,71,1) 0%, rgba(6,78,116,1) 0%, rgba(30,59,96,1) 0%, rgba(3,9,14,1) 0%, rgba(18,67,104,1) 49%, rgba(4,17,29,1) 49%, rgba(11,32,48,1) 50%, rgba(12,37,54,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
@@ -356,38 +292,84 @@ section {
     /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-    .skills .progress {
-        height: 60px;
-        display: block;
-        background: none;
-        border-radius: 0;
-        padding: 0 2% 5% 2%;
+
+
+/* Badge */
+.badge {
+    margin: 1.5em 3em;
+    width: 8em;
+    height: 8em;
+    border-radius: 20%;
+    display: inline-block;
+    top: 0;
+}
+
+
+
+.rounded {
+    width: 65px;
+    height: 65px;
+    background: white;
+    position: absolute;
+    margin: 10px 10px;
+    box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 405px) {
+    .badge {
+        margin: 1.5em 3em;
+        width: 6.5em;
+        height: 6.5em;
     }
+    .rounded {
+        width: 55px;
+        height: 55px;
+        margin: 5px 5px;
+     }
+     .rounded p{
+         font-size:9px;
+     }
+}
+ 
+/* Colors */
+.deepblue {
+    background: dodgerblue;
+    color: deepskyblue;
+}
 
-        .skills .progress .skill {
-            padding: 10px 10px;
-            margin: 0;
-            text-transform: uppercase;
-            display: block;
-            font-weight: 600;
-            color: #45505b;
-        }
+.gold {
+    background: gold;
+    color: gold;
+}
 
-            .skills .progress .skill .val {
-                float: right;
-            }
+.darkred {
+    background: red;
+    color: red;
+}
 
-    .skills .progress-bar-wrap {
-        background-color: white;
-    }
+.darkgreen {
+    background: yellowgreen;
+    color: darkslategray;
+}
 
-    .skills .progress-bar {
-        width: 1px;
-        height: 10px;
-        transition: 0.9s;
-        background-color: #0563bb;
-    }
+.crimson {
+    background: crimson;
+    color: firebrick;
+}
 
+.steel {
+    background: steelblue;
+    color: gold;
+}
+
+.rebecca {
+    background: rebeccapurple;
+    color: rebeccapurple;
+}
+
+.gainsboro {
+    background: gainsboro;
+    color: orangered;
+}
 
     /*--------------------------------------------------------------
 Projects
