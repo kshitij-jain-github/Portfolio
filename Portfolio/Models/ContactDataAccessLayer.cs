@@ -5,7 +5,7 @@ namespace Portfolio.Models
 {
     public class ContactDataAccessLayer
     {
-        string connectionString = "Server = sql.bsite.net\\MSSQL2016;Database =kshitiijjain_;User ID = kshitiijjain_; Password=Jain1530@.com;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security = false;";
+        string connectionString = "Server = sql.bsite.net\\MSSQL2016;Database =kshitijjain_;User ID = kshitijjain_; Password=Jain1530@.com;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security = false;";
 
         // to view all conacts details 
         public IEnumerable<Contact> GetAllContacts()
