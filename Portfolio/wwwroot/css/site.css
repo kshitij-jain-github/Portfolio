@@ -1,26 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Neucha|Cabin+Sketch&display=swap);
-
-
-
+ 
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 body {
+    /*        background: linear-gradient(94deg, rgba(19,49,71,1) 0%, rgba(6,78,116,1) 0%, rgba(30,59,96,1) 0%, rgba(3,9,14,1) 0%, rgba(18,67,104,1) 49%, rgba(4,17,29,1) 49%, rgba(11,32,48,1) 50%, rgba(12,37,54,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+*/
+    background-color: white;
     
-    background: linear-gradient(94deg, rgba(19,49,71,1) 0%, rgba(6,78,116,1) 0%, rgba(30,59,96,1) 0%, rgba(3,9,14,1) 0%, rgba(18,67,104,1) 49%, rgba(4,17,29,1) 49%, rgba(11,32,48,1) 50%, rgba(12,37,54,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-   
-   
 }
 
 .container-fluid {
     min-height: 100vh;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    padding: 2% 5%;
-    color: rgb(225, 237, 255, 0.85);
+ 
+    color: black;
     font-family: 'Comic Sans MS';
-    font-weight: 100;
+    font-weight: 400;
 }
 
 @keyframes gradient {
@@ -37,14 +33,14 @@ body {
     }
 }
 
-
- h1, h2, h3, h4, h5, h6 {
-   
-    font-family: "Cabin Sketch",cursive;
-     
- 
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Baloo Paaji', cursive;
+    color:#323337 !important;
 }
-
+  
+#contactUs{
+    padding:5%;
+}
 
 
 /* nav bar*/
@@ -128,6 +124,7 @@ nav {
 section {
     padding: 2% 0;
     overflow: hidden;
+
 }
 
 .section-title {
@@ -148,20 +145,23 @@ section {
 /*--------------------------------------------------------------
 # Intro
 --------------------------------------------------------------*/
+
 .intro {
     height: 100vh;
     padding: 5%;
-    color:ghostwhite;
+    color: black;
+    background: linear-gradient(180deg, rgba(160,178,213,1) 0%, rgba(255,255,255,1) 100%);
 }
 @media screen and (min-width:200px) and (max-width:500px){
     .intro {
         height: 100vh;
-        padding: 35% 10%;
+        padding: 15% 10%;
     }
 }
 .introduction{
    
     text-align:center;
+    padding-top:8%
 
 }
 .intro h1 {
@@ -170,18 +170,43 @@ section {
 
 
 .photo {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     object-fit: cover;
-    border-radius: 50%;
-    padding:1%
+    border-radius: 40%;
+    
 }
     .word {
         color: #be2f2fbf;
         font-weight: 800
     }
 
+.photo{
+background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+animation: morph 3s ease-in-out infinite;
+border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+height: 300px;
+transition: all .5s ease-in-out;
+width: 300px;
+z-index: 5;
+}
 
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+}
 
 
     /*--------------------------------------------------------------
