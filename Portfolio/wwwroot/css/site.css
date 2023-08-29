@@ -1,11 +1,8 @@
  
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
-body {
-    /*        background: linear-gradient(94deg, rgba(19,49,71,1) 0%, rgba(6,78,116,1) 0%, rgba(30,59,96,1) 0%, rgba(3,9,14,1) 0%, rgba(18,67,104,1) 49%, rgba(4,17,29,1) 49%, rgba(11,32,48,1) 50%, rgba(12,37,54,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-*/
-    background-color: white;
-    
-}
+ 
+
+
 
 .container-fluid {
     min-height: 100vh;
@@ -13,10 +10,9 @@ body {
     justify-content: center;
     overflow: hidden;
     position: relative;
- 
-    color: black;
+    color: #41516C;
     font-family: 'Comic Sans MS';
-    font-weight: 400;
+    font-weight: 600;
 }
 
 @keyframes gradient {
@@ -33,10 +29,9 @@ body {
     }
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Baloo Paaji', cursive;
-    color:#323337 !important;
-}
+ }
   
 #contactUs{
     padding:5%;
@@ -53,7 +48,7 @@ nav {
 
     nav ul {
         text-align: center;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(70,133,162,0.1070553221288515) 50%, rgba(255,255,255,1) 100%);
     }
 
         nav ul li {
@@ -65,7 +60,7 @@ nav {
                 text-transform: uppercase;
                 font-size: 1.1rem;
                 display: block;
-                color: #5da3b7
+                color: #41516C;
             }
 
 
@@ -130,6 +125,7 @@ section {
 .section-title {
     text-align: center;
     padding-bottom: 30px;
+   
 }
 
     .section-title h2 {
@@ -138,10 +134,9 @@ section {
         text-transform: uppercase;
         padding: 20px;
         position: relative;
-        color: #5d7db8
+       
     }
-
-
+ 
 /*--------------------------------------------------------------
 # Intro
 --------------------------------------------------------------*/
@@ -149,13 +144,14 @@ section {
 .intro {
     height: 100vh;
     padding: 5%;
-    color: black;
-    background: linear-gradient(180deg, rgba(160,178,213,1) 0%, rgba(255,255,255,1) 100%);
+    color: #1c374b;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(122,159,191,0.9249824929971989) 100%);
 }
 @media screen and (min-width:200px) and (max-width:500px){
     .intro {
         height: 100vh;
         padding: 15% 10%;
+      
     }
 }
 .introduction{
@@ -169,21 +165,16 @@ section {
 }
 
 
-.photo {
-    width: 270px;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 40%;
-    
-}
+ 
     .word {
         color: #be2f2fbf;
         font-weight: 800
     }
 
 .photo{
-background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-animation: morph 3s ease-in-out infinite;
+ 
+    background-color:black;
+    animation: morph 3s ease-in-out infinite;
 border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 height: 300px;
 transition: all .5s ease-in-out;
@@ -212,19 +203,10 @@ z-index: 5;
     /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
-    font-weight: 700;
-    font-size: 26px;
-    color: #5da3b7
-}
-
-    .about .content ul {
-        list-style: none;
-        padding: 0;
-    }
-
+ 
+ 
         .about .content ul li {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
             text-align: center;
@@ -236,88 +218,179 @@ z-index: 5;
         font-weight: 800
     }
 
-    .about .content p:last-child {
-        margin-bottom: 0;
-        font-weight: 100;
-    }
+     
 
 
+.about img {
+   padding:2%;
+   border:2px solid;
    
+}
 
     /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-    .resume .resume-title {
-        font-size: 26px;
-        font-weight: 700;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #4d75ab
-    }
-.resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #5da3b7;
-    position: relative;
+ 
+.resume ul {
+    --col-gap: 2rem;
+    --row-gap: 2rem;
+    --line-w: .25rem;
+    display: grid;
+    grid-template-columns: var(--line-w) 1fr;
+    grid-auto-columns: max-content;
+    column-gap: var(--col-gap);
+    list-style: none;
+    width:   100%;
+    margin-inline: auto;
 }
 
-    .resume .resume-item h4 {
-        line-height: 18px;
-        font-size: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        color: #5da3b7
+    /* line */
+    .resume ul::before {
+        content: "";
+        grid-column: 1;
+        grid-row: 1 / span 20;
+        background: rgb(225, 225, 225);
+        border-radius: calc(var(--line-w) / 2);
     }
 
-        .resume .resume-item h5 {
-            font-size: 16px;
-            background-color: black;
-            display: inline-block;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
+    /* columns*/
 
-        .resume .resume-item ul {
-            padding-left: 20px;
-        }
+    /* row gaps */
+    .resume ul li:not(:last-child) {
+        margin-bottom: var(--row-gap);
+    }
 
-            .resume .resume-item ul li {
-                padding-bottom: 10px;
-            }
+    /* card */
+    .resume ul li {
+        grid-column: 2;
+        --inlineP: 1.5rem;
+        margin-inline: var(--inlineP);
+        grid-row: span 2;
+        display: grid;
+        grid-template-rows: min-content min-content min-content;
+    }
 
-        .resume .resume-item:last-child {
-            padding-bottom: 0;
-        }
-
-        .resume .resume-item::before {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            border-radius: 50px;
-            left: -9px;
-            top: 0;
-            background: white;
-            border: 2px solid #00b88abf;
-        }
-
-        .resume .resume-item a {
+        /* date */
+        .resume ul li .date {
+            --dateH: 3rem;
+            height: var(--dateH);
+            margin-inline: calc(var(--inlineP) * -1);
             text-align: center;
-            font-weight: 800;
-            color: #4d75ab;
+            background-color: var(--accent-color);
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: grid;
+            place-content: center;
+            position: relative;
+            border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
         }
 
-            .resume .resume-item a:hover {
-                font-weight: 800;
-                font-size: 1.2rem;
-                transition: .2s ease-in;
-                color: #5d0000e6
+            /* date flap */
+            .resume ul li .date::before {
+                content: "";
+                width: var(--inlineP);
+                aspect-ratio: 1;
+                background: var(--accent-color);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+                position: absolute;
+                top: 100%;
+                clip-path: polygon(0 0, 100% 0, 0 100%);
+                right: 0;
             }
+
+            /* circle */
+            .resume ul li .date::after {
+                content: "";
+                position: absolute;
+                width: 2rem;
+                aspect-ratio: 1;
+                background: var(--bgColor);
+                border: 0.3rem solid var(--accent-color);
+                border-radius: 50%;
+                top: 50%;
+                transform: translate(50%, -50%);
+                right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+            }
+
+        /* title descr */
+        .resume ul li .title
+         {
+            background: var(--bgColor);
+            position: relative;
+            padding-inline: 1.5rem;
+        }
+
+        .resume ul li .title {
+            overflow: hidden;
+            padding-block-start: 1.5rem;
+            padding-block-end: 1rem;
+            font-weight: 500;
+        }
+
+         
+
+            /* shadows */
+            .resume ul li .title::before
+             {
+                content: "";
+                position: absolute;
+                width: 90%;
+                height: 0.5rem;
+                background: rgba(0, 0, 0, 0.5);
+                left: 50%;
+                border-radius: 50%;
+                filter: blur(4px);
+                transform: translate(-50%, 50%);
+            }
+
+        .resume ul li .title::before {
+            bottom: calc(100% + 0.125rem);
+        }
+
+       
+
+@media (min-width: 40rem) {
+    .resume ul {
+        grid-template-columns: 1fr var(--line-w) 1fr;
+    }
+
+        .resume ul::before {
+            grid-column: 2;
+        }
+
+        .resume ul li:nth-child(odd) {
+            grid-column: 1;
+        }
+
+        .resume ul li:nth-child(even) {
+            grid-column: 3;
+        }
+
+        /* start second card */
+        .resume ul li:nth-child(2) {
+            grid-row: 2/4;
+        }
+
+        .resume ul li:nth-child(odd) .date::before {
+            clip-path: polygon(0 0, 100% 0, 100% 100%);
+            left: 0;
+        }
+
+        .resume ul li:nth-child(odd) .date::after {
+            transform: translate(-50%, -50%);
+            left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+        }
+
+        .resume ul li:nth-child(odd) .date {
+            border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+        }
+}
+ 
     /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-
+ 
 
 /* Badge */
 .badge {
@@ -417,13 +490,10 @@ Projects
         margin: 0 0 2rem 0;
         overflow: hidden;
         position: relative;
-        color: #ffffff;
+        
     }
 
-        .postcard.dark {
-            background-color: #18151f;
-        }
-
+       
 
         .postcard .t-dark {
             color: #18151f;
@@ -868,7 +938,7 @@ Projects
             position: absolute;
             width: 60px;
             height: 60px;
-            background: #0563bb;
+            background: #41516C;
             bottom: 0;
             border-radius: 50%;
             left: 0;
@@ -879,8 +949,7 @@ Projects
             text-align: center;
             font-size: 15px;
             z-index: 100;
-            box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
-            cursor: pointer;
+             cursor: pointer;
             -webkit-transition: all 0.3s;
             transition: all 0.3s;
         }
