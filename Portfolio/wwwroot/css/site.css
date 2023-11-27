@@ -1,7 +1,4 @@
- 
-@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
- 
-
+@import url(https://fonts.googleapis.com/css?family=Neucha|Cabin+Sketch&display=swap);
 
 
 .container-fluid {
@@ -10,9 +7,11 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
-    color: #41516C;
-    font-family: 'Comic Sans MS';
-    font-weight: 600;
+    color: black;
+    font-weight:800;
+    background-color:#0076bd
+    
+   
 }
 
 @keyframes gradient {
@@ -29,12 +28,13 @@
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Baloo Paaji', cursive;
- }
+h1, h2, h3, h4, h5 ,h6,p{
+    font-family: "Cabin Sketch", cursive;
+}
   
 #contactUs{
     padding:5%;
+    background-color:rgb(186, 134, 57)
 }
 
 
@@ -48,8 +48,7 @@ nav {
 
     nav ul {
         text-align: center;
-        background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(70,133,162,0.1070553221288515) 50%, rgba(255,255,255,1) 100%);
-    }
+     }
 
         nav ul li {
             display: inline-block;
@@ -60,19 +59,19 @@ nav {
                 text-transform: uppercase;
                 font-size: 1.1rem;
                 display: block;
-                color: #41516C;
+                color: black;
             }
 
 
                 nav ul li a:hover {
-                    font-size: 25px;
+                    font-size: 1.6rem;
                     -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
                     -webkit-mask-size: 200%;
                     animation: shine 2s infinite;
                     transition: .3s ease-in;
-                    font-weight: 600;
-                    color: #be2f2f;
-                    text-decoration:none;
+                    font-weight: 800;
+                    color: #41516C;
+                    text-decoration: none;
                 }
 
 @-webkit-keyframes shine {
@@ -98,8 +97,7 @@ nav {
 
         nav ul li a:hover {
             padding: .3rem;
-            font-size: .6rem;
-            
+            font-size: .6rem;            
             transition: .3s ease-in;
         }
 }
@@ -119,6 +117,7 @@ nav {
 section {
     padding: 2% 0;
     overflow: hidden;
+    border:8px solid black;
 
 }
 
@@ -130,7 +129,7 @@ section {
 
     .section-title h2 {
         font-size: 32px;
-        font-weight: 900;
+        font-weight: 800;
         text-transform: uppercase;
         padding: 20px;
         position: relative;
@@ -144,8 +143,7 @@ section {
 .intro {
     height: 100vh;
     padding: 5%;
-    color: #1c374b;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(122,159,191,0.9249824929971989) 100%);
+    background-color: #ffc510
 }
 @media screen and (min-width:200px) and (max-width:500px){
     .intro {
@@ -161,7 +159,7 @@ section {
 
 }
 .intro h1 {
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 
@@ -203,7 +201,9 @@ z-index: 5;
     /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
- 
+.about {
+    background-color :#ee5454 ;
+}
  
         .about .content ul li {
             margin-bottom: 15px;
@@ -230,7 +230,9 @@ z-index: 5;
     /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
- 
+.resume {
+    background-color: #4c94f6;
+}
 .resume ul {
     --col-gap: 2rem;
     --row-gap: 2rem;
@@ -325,7 +327,7 @@ z-index: 5;
             overflow: hidden;
             padding-block-start: 1.5rem;
             padding-block-end: 1rem;
-            font-weight: 500;
+            font-weight: 600;
         }
 
          
@@ -393,6 +395,9 @@ z-index: 5;
  
 
 /* Badge */
+.skills {
+    background-color: #d23954;
+}
 .badge {
     margin: 1.5em 3em;
     width: 8em;
@@ -472,7 +477,9 @@ z-index: 5;
     /*--------------------------------------------------------------
 Projects
 --------------------------------------------------------------*/
-
+.projects {
+     background: #29a03c;
+}
 
     a, a:hover {
         text-decoration: none;
@@ -773,6 +780,9 @@ Projects
     }
 
     /*CERTIFICATE CARDS*/
+.certificates {
+    background: #c34ad1;
+}
     .container .card {
         max-width: 300px;
         height: 215px;
